@@ -18,7 +18,7 @@ public class Excel {
 	public static HashMap<Integer, ArrayList<String>> getData(String sheetName) throws Exception{
 		
 		HashMap<Integer, ArrayList<String>>dataMap = new HashMap<Integer , ArrayList<String>>();
-		File file = new File("D:\\java\\new batch\\HybridFrameWork\\src\\testData\\Data.xls");
+		File file = new File("D:\\java\\newBatch\\HybridFrameWork\\src\\testData\\Data.xls");
 		FileInputStream io = new FileInputStream(file);
 
 		HSSFWorkbook wb = new HSSFWorkbook(io);
@@ -45,7 +45,7 @@ public class Excel {
 	}
     public static void updateRow(String sheetName , String inputValue , int rowNumber) throws Exception {
     	
-    	File file = new File("D:\\java\\new batch\\HybridFrameWork\\src\\testData\\Data.xls");
+    	File file = new File("D:\\java\\newBatch\\HybridFrameWork\\src\\testData\\Data.xls");
     	FileInputStream io = new FileInputStream(file);
 		HSSFWorkbook wb = new HSSFWorkbook(io);
 		HSSFSheet sheet = wb.getSheet(sheetName);
