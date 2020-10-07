@@ -183,6 +183,10 @@ public class Keyword {
 			
 			browser.quit();
 		}
+		public static void someKeywords(String locator, String args2, String args3) {
+			
+			//codes are here
+		}
 		
 		
 		
